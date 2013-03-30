@@ -18,13 +18,6 @@ To use the plugin, you will run the `$.superFastFilter();` method on the input f
 ## Options
 As always, to use any of the following methods simply pass them as an argument when using the plugin.
 
-    $('.someInputBox').superFastFilter({
-      list: $('selector'),
-      option1: value,
-      option2: value
-    });
-
-
 #### lookupTable - *Default, [].*
 If you have a namespaced array you wish to use, such as App.someBlankArray, specify it here
     
