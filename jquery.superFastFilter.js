@@ -1,6 +1,5 @@
 // jQuery Super Fast List Filter Plugin
-// Created by Matt Mehlhope (mmehlhope@gmail.com), inspired by Abhin Sharma of Nettuts+
-// Development version 1.01
+// Created by Matt Mehlhope (mmehlhope@gmail.com)
 
 // MIT License
 
