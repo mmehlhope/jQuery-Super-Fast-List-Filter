@@ -4,7 +4,7 @@
 The Super Fast List Filter Plugin is an extremely lightweight, simple plugin that allows users to filter a list of elements through typing.
 
 ## Demo
-You can view an example page [here](http://mmehlhope.github.com/EasyImagePreloader/).
+You can view an example page [here](http://mmehlhope.github.com/jQuery-Super-Fast-List-Filter/).
 
 ## Usage
 To use the plugin, you will run the `$.superFastFilter();` method on the input field the user will be typing into. There is one required option, which is `list`. For `list`, pass in the selector of the list you want to be filtered when the user types into the designated input field.
