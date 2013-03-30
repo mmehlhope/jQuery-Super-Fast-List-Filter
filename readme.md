@@ -24,8 +24,17 @@ As always, to use any of the following methods simply pass them as an argument w
       option2: value
     });
 
-#### onDone - *Default, none. Callback function is used on keyup*
-A callback function to be fired once all images have been loaded.
+
+#### lookupTable - *Default, [].*
+If you have a namespaced array you wish to use, such as App.someBlankArray, specify it here
+    
+    $('.someInputBox').superFastFilter({
+      list: $('.anUnorderedList'),
+      lookupTable: App.someBlankArray
+    });
+
+#### onDone - *Default, none. *
+Callback function that is fired on keyup after the filter has been completed
     
     $('.someInputBox').superFastFilter({
       list: $('.anUnorderedList'),
