@@ -50,6 +50,7 @@
 
     defaults: {
       list: null, // the list that will be filtered on keyup of your selected input
+      listKeyValueSelector: null, // selector within child list element to be used instead of .text() for key value
       lookupTable: [], // the array that will store the lookup table
       onDone: function() {} // callback for when all images are complete
     },
@@ -73,7 +74,7 @@
           
           for (var i = 0; i < children.length; i++) {
             var current = children[i],
-                name = $(current).text().toLowerCase(),
+                name = (settings.listKeyValueSelector === null) ? $(current).text().toLowerCase() : $(current).find(settings.listKeyValueSelector).text().toLowerCase(),
                 $selector = $(current);
             
             lookupTable.push({
@@ -101,6 +102,9 @@
                 $selector.hide();
             } else {}
           }
+
+          // callback when filter is complete
+          settings.onDone();
         };
 
       });  
